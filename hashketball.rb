@@ -165,7 +165,7 @@ def num_points_scored(name)
       inner_value.each do |player|
        if player[:player_name] == name
          
-        return player[:points]
+        return player[:shoe_size]
        end
       end  
     end  
