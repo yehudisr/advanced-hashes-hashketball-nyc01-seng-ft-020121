@@ -135,7 +135,6 @@ home_players.concat away_players
 end
 
 def find_players players
-
 players.find do |player|  
 player[:player_name]  
 binding.pry 
