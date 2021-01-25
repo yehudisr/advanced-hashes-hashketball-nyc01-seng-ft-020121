@@ -134,7 +134,7 @@ away_players = game_hash[:away][:players]
 home_players.concat away_players
 end
 
-def find_players players
+def find_players
 players.find do |player|  
 player[:player_name]  
 binding.pry 
