@@ -128,11 +128,17 @@ def game_hash
   }
 end
 
-#def players
-#home_players = game_hash[:home][:players]
-#away_players = game_hash[:away][:players]
-#home_players.concat away_players
-#end
+def players
+home_players = game_hash[:home][:players]
+away_players = game_hash[:away][:players]
+home_players.concat away_players
+end
+
+def find_players players
+
+players.find do |player|  
+player[:player_name]  
+end  
 
 
 def num_points_scored(name)
