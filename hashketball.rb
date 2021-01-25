@@ -205,9 +205,19 @@ end
 end    
 
 def player_stats (player)
-
-  
-  
-end  
+ game_hash.each do |key, value|
+    value.each do |inner_key, inner_value|
+      if inner_key == :players
+      
+      inner_value.each do |player|
+       if player[:player_name] == player
+         
+        return inner_value
+       end
+      end  
+    end  
+    end  
+  end  
+ end 
  
  
