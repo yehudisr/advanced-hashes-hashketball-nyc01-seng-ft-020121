@@ -143,8 +143,8 @@ def num_points_scored(name)
        player[:player_name] == name
     binding.pry  
     #binding.pry
-        end
-    end  
+      end
+      end  
     end  
     end  
   end  
