@@ -212,12 +212,13 @@ def player_stats (player)
       inner_value.each do |player|
        if player[:player_name] == player
          
-        return inner_value
+        return 
        end
       end  
     end  
     end  
-  end  
+  end 
+  
  end 
  
  
