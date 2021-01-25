@@ -177,9 +177,11 @@ end
 
 
 def team_names 
+teams = []
 game_hash.each do |key, value|
-return value[:team_name] 
+teams << value[:team_name] 
 end
+teams
 end  
 
   
