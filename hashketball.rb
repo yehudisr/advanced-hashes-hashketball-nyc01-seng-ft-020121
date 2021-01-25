@@ -192,7 +192,7 @@ def player_numbers (team)
       if inner_key == :players
      
         inner_value.each do |player|
-           #binding.pry
+          
         team_numbers << player[:number]
         end
       end  
@@ -203,5 +203,11 @@ end
  
  team_numbers
 end    
+
+def player_stats (player)
+
+  
+  
+end  
  
  
