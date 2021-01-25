@@ -210,7 +210,7 @@ def player_stats (player)
       if inner_key == :players
       
       inner_value.each do |player|
-       if player[:player_name] == player
+       #if player[:player_name] == player
           #return inner_value
           binding.pry
        end
