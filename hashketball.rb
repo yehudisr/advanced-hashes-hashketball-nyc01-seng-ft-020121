@@ -130,7 +130,7 @@ end
 
 #def players
 #home_players = game_hash[:home][:players]
-away_players = game_hash[:away][:players]
+#away_players = game_hash[:away][:players]
 home_players.concat away_players
 end
 
