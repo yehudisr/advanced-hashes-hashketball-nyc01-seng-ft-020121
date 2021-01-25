@@ -228,7 +228,9 @@ def player_stats (name)
       if inner_key == :players
      
         inner_value.each do |player|
-          max_num = player[:shoe] if player[:shoe] > max_num
+         max_num = player[:shoe]  
+         player.each do |shoe|
+           max_num = player[:shoe] if player[:shoe] > max_num
           
           binding.pry
           return player[:rebounds]
