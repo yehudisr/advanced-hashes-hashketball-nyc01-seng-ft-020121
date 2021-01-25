@@ -228,8 +228,9 @@ def player_stats (name)
       if inner_key == :players
       
         inner_value.each do |player|
+        
+        if player[:shoe] > 
         binding.pry
-        player[:shoe]
         end
       end  
       end  
