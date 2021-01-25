@@ -187,6 +187,7 @@ end
 
 def team_name 
 game_hash.each do |key, value|
+binding.pry
 value[:team_name] 
 
 end
