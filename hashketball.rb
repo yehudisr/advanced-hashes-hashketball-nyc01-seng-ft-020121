@@ -143,11 +143,11 @@ def num_points_scored(name)
       inner_value.find do |player|
        player[:player_name] == name
         binding.pry  
-   
+        player[:points]
     
       end  
     end  
     end  
   end  
-  player[:points]
+ 
 end  
