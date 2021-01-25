@@ -184,7 +184,20 @@ end
 teams
 end  
 
-  
-    
+def player_numbers (team)  
+  game_hash.each do |key, value|
+    value.each do |inner_key, inner_value|
+      if inner_key == :players
+      binding.pry
+      inner_value.each do |player|
+      return player[:number]
+       end
+      end  
+    end  
+    end  
+  end  
+ end
+
+end    
  
  
