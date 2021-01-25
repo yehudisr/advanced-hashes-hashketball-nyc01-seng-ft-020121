@@ -138,6 +138,7 @@ def find_players players
 
 players.find do |player|  
 player[:player_name]  
+binding.pry 
 end  
 
 
@@ -148,7 +149,7 @@ def num_points_scored(name)
       
       inner_value.each do |player|
        if player[:player_name] == name
-        binding.pry  
+         
         player[:points]
        end
       end  
