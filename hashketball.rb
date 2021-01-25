@@ -224,7 +224,7 @@ def player_stats (name)
  def big_shoe_rebounds
   
    game_hash.each do |key, value|
-    value.each do |inner_key, inner_value|
+      value.each do |inner_key, inner_value|
       if inner_key == :players
       
         inner_value.each do |player|
@@ -232,9 +232,9 @@ def player_stats (name)
         player[:shoe]
         end
       end  
-    end  
-    end  
-  end   
+      end  
+   end  
+ end   
    
  #end 
  
