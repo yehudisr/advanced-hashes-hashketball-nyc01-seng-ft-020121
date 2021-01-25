@@ -204,15 +204,15 @@ end
  team_numbers
 end    
 
-def player_stats (player)
+def player_stats (name)
  game_hash.each do |key, value|
     value.each do |inner_key, inner_value|
       if inner_key == :players
       
       inner_value.each_with_index do |player, index|
-       if player[:player_name] == player
+       if player[:player_name] == name
           return inner_value[index]
-         binding.pry
+         #binding.pry
        end
       end  
     end  
