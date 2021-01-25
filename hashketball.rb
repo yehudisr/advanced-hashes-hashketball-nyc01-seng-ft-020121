@@ -175,7 +175,9 @@ def num_points_scored(name)
    
 def team_colors (team)
 game_hash.each do |key, value|
+  value.each do |inner_key, inner_value|
 binding.pry
+  end
 end  
 end  
     
