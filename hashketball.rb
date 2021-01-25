@@ -234,7 +234,7 @@ def player_stats (name)
           
           binding.pry
           return player[:rebounds]
-            
+          end
           end
         end
       end  
