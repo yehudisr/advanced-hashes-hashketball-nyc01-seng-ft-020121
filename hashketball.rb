@@ -212,7 +212,7 @@ def player_stats (player)
       inner_value.each_with_index do |player, index|
        if player[:player_name] == player
           return inner_value[index]
-         #binding.pry
+         binding.pry
        end
       end  
     end  
