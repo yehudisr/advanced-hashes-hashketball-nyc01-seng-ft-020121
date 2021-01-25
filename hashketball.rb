@@ -229,9 +229,10 @@ def player_stats (name)
       
         inner_value.each do |player|
         max_num = 0
-        if player[:shoe] > max_num
+          if player[:shoe] > max_num
           max_num = player[:shoe]
-        binding.pry
+          binding.pry
+          end
         end
       end  
       end  
