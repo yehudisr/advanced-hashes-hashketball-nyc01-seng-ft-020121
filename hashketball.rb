@@ -226,15 +226,13 @@ def player_stats (name)
    game_hash.each do |key, value|
       value.each do |inner_key, inner_value|
       if inner_key == :players
-     
+        max_num = player[:shoe] 
         inner_value.each do |player|
-         max_num = player[:shoe]  
-  
-           max_num = player[:shoe] if player[:shoe] > max_num
+          max_num = player[:shoe] if player[:shoe] > max_num
           
           binding.pry
-          return player[:rebounds]
-          end
+          #return player[:rebounds]
+        
           end
         end
       end  
