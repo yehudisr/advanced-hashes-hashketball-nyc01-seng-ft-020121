@@ -175,7 +175,7 @@ game_hash.each do |key, value|
 end  
 end  
 
-def team_name 
+def team_names 
 
 game_hash.each do |key, value|
 binding.pry
