@@ -186,6 +186,7 @@ end
 
 def player_numbers (team)  
   game_hash.each do |key, value|
+    if value[:team_name] == team
     value.each do |inner_key, inner_value|
       if inner_key == :players
       binding.pry
