@@ -231,9 +231,10 @@ def player_stats (name)
           max_num = player[:shoe] if player[:shoe] > max_num
           
           binding.pry
-          #return player[:rebounds]
+          
         
           end
+           return player[:rebounds]
         end
       end  
       end  
