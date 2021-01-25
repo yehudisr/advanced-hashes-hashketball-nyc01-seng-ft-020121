@@ -213,7 +213,7 @@ def player_stats (player)
        #if player[:player_name] == player
           #return inner_value
           binding.pry
-       end
+       #end
       end  
     end  
     end  
