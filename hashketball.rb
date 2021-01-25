@@ -185,13 +185,14 @@ teams
 end  
 
 def player_numbers (team)  
+  team_numbers = []
   game_hash.each do |key, value|
     if value[:team_name] == team
     value.each do |inner_key, inner_value|
       if inner_key == :players
       #binding.pry
         inner_value.each do |player|
-        return player[:number]
+        team_numbers << player[:number]
         end
       end  
     end  
