@@ -139,7 +139,7 @@ players.find do |player|
 player[:player_name]  
 binding.pry 
 end  
-
+end
 
 def num_points_scored(name)
   game_hash.each do |key, value|
