@@ -190,8 +190,9 @@ def player_numbers (team)
     if value[:team_name] == team
     value.each do |inner_key, inner_value|
       if inner_key == :players
-      binding.pry
+     
         inner_value.each do |player|
+           binding.pry
         team_numbers << player[:number]
         end
       end  
