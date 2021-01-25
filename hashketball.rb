@@ -209,11 +209,11 @@ def player_stats (player)
     value.each do |inner_key, inner_value|
       if inner_key == :players
       
-      inner_value.each do |player|
-       #if player[:player_name] == player
-          #return inner_value
+      inner_value.each_with_index do |player, index|
+       if player[:player_name] == player
+          return inner_value[index]
           binding.pry
-       #end
+       end
       end  
     end  
     end  
