@@ -177,8 +177,9 @@ def team_colors (team)
 game_hash.each do |key, value|
   value.each do |inner_key, inner_value|
     if team == value  && inner_key == :colors
+       binding.pry
       return inner_value
-      binding.pry
+     
     end 
   end
 end  
