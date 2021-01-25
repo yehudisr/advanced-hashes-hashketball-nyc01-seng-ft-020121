@@ -134,8 +134,7 @@ def num_points_scored(name)
       
       if inner_key == :players
       inner_value.each do |data|
-        
-      data[:player_name] == name
+       data[:player_name] == name
     binding.pry  
       #return data[:points]
     #binding.pry
