@@ -231,7 +231,7 @@ def player_stats (name)
           if player[:shoe] > max_num
           max_num = player[:shoe]
           return player[:rebounds]
-            #binding.pry
+            binding.pry
           end
         end
       end  
