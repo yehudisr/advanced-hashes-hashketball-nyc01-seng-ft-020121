@@ -234,7 +234,7 @@ def player_stats (name)
           big_shoe = player[:shoe]
           rebounds = player[:rebounds]
           
-          binding.pry
+          #binding.pry
       
           end
            
