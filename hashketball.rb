@@ -1,4 +1,6 @@
 # Write your code below game_hash
+require "pry"
+
 def game_hash
   {
     home: {
@@ -126,4 +128,119 @@ def game_hash
   }
 end
 
-# Write code here
+
+
+def num_points_scored(name)
+  game_hash.each do |key, value|
+    value.each do |inner_key, inner_value|
+      if inner_key == :players
+      
+      inner_value.each do |player|
+       if player[:player_name] == name
+         
+        return player[:points]
+       end
+      end  
+    end  
+    end  
+  end  
+ end
+ 
+ def shoe_size (name)
+  game_hash.each do |key, value|
+    value.each do |inner_key, inner_value|
+      if inner_key == :players
+      
+      inner_value.each do |player|
+       if player[:player_name] == name
+         
+        return player[:shoe]
+       end
+      end  
+    end  
+    end  
+  end  
+ end 
+   
+def team_colors (team)
+
+game_hash.each do |key, value|
+  
+  value.each do |inner_key, inner_value|
+    if team == value[:team_name] && inner_key == :colors
+      return inner_value
+     
+    end 
+  end
+end  
+end  
+
+
+def team_names 
+teams = []
+game_hash.each do |key, value|
+teams << value[:team_name] 
+end
+teams
+end  
+
+def player_numbers (team)  
+  team_numbers = []
+  game_hash.each do |key, value|
+    if value[:team_name] == team
+    value.each do |inner_key, inner_value|
+      if inner_key == :players
+     
+        inner_value.each do |player|
+          
+        team_numbers << player[:number]
+        end
+      end  
+    end  
+  end 
+ 
+end  
+ 
+ team_numbers
+end    
+
+def player_stats (name)
+ game_hash.each do |key, value|
+    value.each do |inner_key, inner_value|
+      if inner_key == :players
+      
+      inner_value.each_with_index do |player, index|
+       if player[:player_name] == name
+          return inner_value[index]
+  
+       end
+      end  
+    end  
+    end  
+  end 
+  
+ end 
+ 
+ def big_shoe_rebounds
+   big_shoe = 0 
+   rebounds = 0 
+  
+   game_hash.each do |team, team_info|
+      team_info.each do |inner_key, inner_value|
+      if inner_key == :players
+      
+        inner_value.each do |player|
+        if player[:shoe] > big_shoe
+          big_shoe = player[:shoe]
+          rebounds = player[:rebounds]
+          
+          end
+        end
+      end  
+      end  
+    end
+      return rebounds
+   end 
+   
+
+ 
